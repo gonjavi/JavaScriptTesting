@@ -1,5 +1,5 @@
 const capitalize = require('./index');
-const reverseString = require('./index');
+const reverseString = require('./reverse');
 
 test('Capitalize string', () => {
   expect(capitalize('string')).toBe('String');

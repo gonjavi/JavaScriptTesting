@@ -5,8 +5,5 @@ function capitalize(string) {
   string.splice(0,1,f);
   return string.join("");
 }
- 
-function reverseString(string) {
 
-}
-module.exports = capitalize, reverseString;
+module.exports = capitalize;
