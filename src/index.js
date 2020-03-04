@@ -6,4 +6,7 @@ function capitalize(string) {
   return string.join("");
 }
  
-module.exports = capitalize;
+function reverseString(string) {
+
+}
+module.exports = capitalize, reverseString;
