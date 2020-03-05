@@ -1,3 +1,5 @@
+const calculator = require('./calculator')
+
 function capitalize(string) {
   let f= '' ;
   f = string.charAt(0).toUpperCase();
@@ -6,4 +8,5 @@ function capitalize(string) {
   return string.join("");
 }
 
+console.log(calculator.sum(4,5));
 module.exports = capitalize;
