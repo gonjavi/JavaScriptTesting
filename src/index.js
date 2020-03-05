@@ -8,5 +8,4 @@ function capitalize(string) {
   return string.join("");
 }
 
-console.log(calculator.sum(4,5));
 module.exports = capitalize;
