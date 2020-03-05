@@ -1,6 +1,7 @@
 const capitalize = require('./index');
 const reverseString = require('./reverse');
-const calculator = require('./calculator')
+const calculator = require('./calculator');
+const caesar = require('./caesar');
 
 test('Capitalize first string passes ', () => {
   expect(capitalize('string')).toBe('String');
