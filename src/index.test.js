@@ -15,13 +15,13 @@ test('Calculator addition test', () => {
 });
 
 test('Calculator subtraction test', () => {
-  expect(calculator.subtract(4, 3).toBe(1));
+  expect(calculator.subtract(4, 3)).toBe(1);
 });
 
 test('Calculator multiplication test', () => {
-  expect(calculator.multiply(4, 4).toBe(16));
+  expect(calculator.multiply(4, 4)).toBe(16);
 });
 
 test('Calculator multiplication test', () => {
-  expect(calculator.divide(10, 2 ).toBe(5));
+  expect(calculator.divide(10, 2 )).toBe(5);
 });
