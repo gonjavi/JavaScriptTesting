@@ -7,6 +7,6 @@ function capitalize(string) {
   string.splice(0, 1, f);
   return string.join('');
 }
-(caesar('z...z', 2));
+(caesar('z  z', 2));
 
 module.exports = capitalize;

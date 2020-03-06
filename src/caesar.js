@@ -5,6 +5,8 @@ function caesar(word, keyNumber) {
   let decipher = [];
   let x = 0;
   let y = 0;
+  let w = 0;
+  let z = 0;
   word = word.split('');
 
   word.forEach((element, index) => {
@@ -17,10 +19,14 @@ function caesar(word, keyNumber) {
           x = 2;
         }
       } else if (index < word.length && element === ' ') {
-        encipher.push(element);
+        if (w < 1) {
+          encipher.push(element);
+          w = 1;
+        }
       }
     });
     x = 0;
+    w = 0;
   });
 
   console.log(encipher);
@@ -34,12 +40,17 @@ function caesar(word, keyNumber) {
           y = 2;
         }
       } else if (index < word.length && element === ' ') {
-        decipher.push('');
+        if (z < 1) {
+          decipher.push(' ');
+          z = 2;
+        }
       }
     });
     y = 0;
+    z = 0;
   });
   decipher = decipher.join('');
+  console.log(decipher);
   return decipher;
 }
 
