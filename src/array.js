@@ -2,8 +2,7 @@ function analyzeArray(array) {
   let average = 0;
   let min1 = 200;
   let max1 = -200;
-  let length = 0;
-  length = array.length;
+  const { length } = array;
   let x = 0;
 
   array.forEach((element) => {
