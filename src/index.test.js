@@ -2,6 +2,7 @@ const capitalize = require('./index');
 const reverseString = require('./reverse');
 const calculator = require('./calculator');
 const caesar = require('./caesar');
+const analyzeArray = require('./array');
 
 test('Capitalize first string passes ', () => {
   expect(capitalize('string')).toBe('String');
@@ -74,7 +75,7 @@ test('Caesar punctuation test passes', () => {
 });
 
 test('Array analysis test pass', () => {
-  expect(analizeArray([[1, 8, 3, 4, 2, 6]])).toBe({
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toStrictEqual({
     average: 4,
     min: 1,
     max: 8,
@@ -83,7 +84,7 @@ test('Array analysis test pass', () => {
 });
 
 test('Array analysis test fail', () => {
-  expect(analizeArray([[1, 8, 3, 4, 2, 6]])).not.toBe({
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).not.toBe({
     average: 1,
     min: 4,
     max: 6,
