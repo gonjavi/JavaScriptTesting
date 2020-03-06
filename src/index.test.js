@@ -45,11 +45,11 @@ test('Calculator multiplication test fails', () => {
 });
 
 test('Calculator multiplication test passes', () => {
-  expect(calculator.divide(10, 2 )).toBe(5);
+  expect(calculator.divide(10, 2)).toBe(5);
 });
 
 test('Calculator multiplication test fails', () => {
-  expect(calculator.divide(10, 2 )).not.toBe(!5);
+  expect(calculator.divide(10, 2)).not.toBe(!5);
 });
 
 // Caesar Cipher tests
@@ -58,7 +58,7 @@ test('Caesar test passes', () => {
 });
 
 test('Caesar test fails', () => {
-  expect(caesar('stringz', 3)).not.toMatch(/vwulqjc/);
+  expect(caesar('stringz', 3)).not.toMatch(/vwulqjp/);
 });
 
 test('Caesar test with space passes', () => {
@@ -70,7 +70,7 @@ test('Caesar test with space fails', () => {
 });
 
 test('Caesar punctuation test passes', () => {
-  expect(caesar('the. house.', 10)).toMatch(/dro. ryeco./);
+  expect(caesar('the.house.', 10)).toMatch(/dro.ryeco./);
 });
 
 test('Caesar punctuation test fails', () => {
