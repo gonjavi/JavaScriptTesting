@@ -29,7 +29,6 @@ function caesar(word, keyNumber) {
     w = 0;
   });
 
-  console.log(encipher);
   encipher.forEach((element, index) => {
     alphabet2.forEach((item, ind) => {
       if (index < word.length && element === ind) {
@@ -50,7 +49,6 @@ function caesar(word, keyNumber) {
     z = 0;
   });
   decipher = decipher.join('');
-  console.log(decipher);
   return decipher;
 }
 

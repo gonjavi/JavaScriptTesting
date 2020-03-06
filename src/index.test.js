@@ -72,3 +72,21 @@ test('Caesar test with space fails', () => {
 test('Caesar punctuation test passes', () => {
   expect(caesar(',.;:', 10)).toMatch(/,.;:/);
 });
+
+test('Array analysis test pass', () => {
+  expect(analizeArray([[1, 8, 3, 4, 2, 6]])).toBe({
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6,
+  });
+});
+
+test('Array analysis test fail', () => {
+  expect(analizeArray([[1, 8, 3, 4, 2, 6]])).not.toBe({
+    average: 1,
+    min: 4,
+    max: 6,
+    length: 8,
+  });
+});

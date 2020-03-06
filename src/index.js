@@ -1,4 +1,3 @@
-const caesar = require('./caesar');
 
 function capitalize(string) {
   let f = '';
@@ -7,6 +6,5 @@ function capitalize(string) {
   string.splice(0, 1, f);
   return string.join('');
 }
-(caesar('z  z', 2));
 
 module.exports = capitalize;
