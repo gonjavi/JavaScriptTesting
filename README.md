@@ -17,10 +17,6 @@ This app tests the following functions:
 - Bootstrap
 - Visual Code
 
-## Live Demo
-
-[Live Demo Link](www.dont.forget.com)
-
 
 ### Prerequisites
 npm 6.13.14
