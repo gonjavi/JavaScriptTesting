@@ -38,7 +38,10 @@ To run the test go to the command line, and type one of the commands:
 
  - $yarn test 
   - $npm run test
+  
+  You will see the test result:
 
+![screenshot](./test.png)
 
 
 
