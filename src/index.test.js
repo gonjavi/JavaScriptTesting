@@ -8,15 +8,15 @@ test('Capitalize first string passes ', () => {
   expect(capitalize('string')).toBe('String');
 });
 test('Capitalize first string fails', () => {
-  expect(capitalize('string')).not.toMatch(/string/);
+  expect(capitalize('string')).not.toBe('string');
 });
 
 test('Reverse string pass', () => {
-  expect(reverseString('string')).toMatch(/gnirts/);
+  expect(reverseString('string')).toBe('gnirts');
 });
 
 test('Reverse string fails', () => {
-  expect(reverseString('string')).not.toMatch(/string/);
+  expect(reverseString('string')).not.toBe('string');
 });
 
 test('Calculator addition test passes', () => {
@@ -55,19 +55,19 @@ test('Calculator multiplication test fails', () => {
 
 // Caesar Cipher tests
 test('Caesar test passes', () => {
-  expect(caesar('stringz', 3)).toMatch(/vwulqjc/);
+  expect(caesar('stringz', 3)).toBe('vwulqjc');
 });
 
 test('Caesar test fails', () => {
-  expect(caesar('stringz', 3)).not.toMatch(/vwulqjp/);
+  expect(caesar('stringz', 3)).not.toBe('vwulqjp');
 });
 
 test('Caesar test with space passes', () => {
-  expect(caesar('the house ', 4)).toMatch(/xli lsywi /);
+  expect(caesar('the house ', 4)).toBe('xli lsywi ');
 });
 
 test('Caesar test with space fails', () => {
-  expect(caesar('the house', 4)).not.toMatch(/xlilsywi/);
+  expect(caesar('the house', 4)).not.toBe('xlilsywi');
 });
 
 test('Caesar punctuation test passes', () => {
